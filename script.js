@@ -23,3 +23,45 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+let slideIndex = 0;
+showSlides();
+
+// Show slides function
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("dot");
+
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    // Increment slideIndex
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+
+    // Reset dots to inactive
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";  
+    dots[slideIndex - 1].className += " active";
+
+    // Change image every 3 seconds
+    setTimeout(showSlides, 3000);
+}
+
+// Function to change slides when user clicks arrows
+function plusSlides(n) {
+    slideIndex += n - 1;
+    showSlides();
+}
+
+// Function to go to a specific slide (dot)
+function currentSlide(n) {
+    slideIndex = n;
+    showSlides();
+}

@@ -13,9 +13,8 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">News</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">news</a></li>
                 <li><a href="#" class="cart-button">🛒 Cart (0)</a></li>
             </ul>
             <!-- Updated login link with modal trigger -->
@@ -24,7 +23,35 @@
             </div>
         </nav>
     </header>
-    
+    <section class="image-carousel">
+        <div class="carousel-container">
+            <div class="slides fade">
+                <img src="img/nike x barca.jpg" alt="Barcelona 1" style="width:90%">
+            </div>
+            <div class="slides fade">
+                <img src="img/FCB+M+NK+DF+STD+ISS+PO+HDY+AW.png" alt="Barcelona 2" style="width:90%">
+            </div>
+            <div class="slides fade">
+                <img src="img/pull barca.png" alt="Barcelona 3" style="width:90%">
+            </div>
+            <div class="slides fade">
+                <img src="img/FCB+M+NK+WINTERIZED+AWF+JKT+3R.jpg" alt="Barcelona 4" style="width:90%">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots (for image indicators) -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+    </section>
+
     <!-- Login Modal -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
@@ -37,21 +64,21 @@
             </form>
         </div>
     </div>
-
+    
     <main>
         <section class="featured-products">
-            <h2>Featured Products</h2>
+            <h2> Products</h2>
             <div class="product-list">
                 <div class="product-item">
-                    <img src="img/patta-x-nike-air-max-plus-tn-fc-barcelona-FN8260-001.jpg" alt="Barcelona Jersey">
-                    <h3>T-shirt</h3>
+                    <img src="img/tn barca.jpg" alt="Barcelona Jersey">
+                    <h3>nike Sneakers x Barcelona</h3>
                     <p>Price: $89.99</p>
                     <p>Available Units: 20</p>
                     <button>Add to Cart</button>
                 </div>
                 <div class="product-item">
                     <img src="img/366814_101_NIKE_FCB M NK DF STAD JSY SS HM_M1.avif" alt="Nike Sneakers">
-                    <h3>Nike Sneakers</h3>
+                    <h3>T-shirt Barcelona</h3>
                     <p>Price: $119.99</p>
                     <p>Available Units: 15</p>
                     <button>Add to Cart</button>
