@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike & FC Barcelona></title>
+    <title>Nike & FC Barcelona</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,18 +18,33 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#" class="cart-button">🛒 Cart (0)</a></li>
             </ul>
+            <!-- Updated login link with modal trigger -->
+            <div class="login">
+                <a href="#" id="loginBtn">Se connecter</a>
+            </div>
         </nav>
+    </header>
     
-    
-</header>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Se connecter</h2>
+            <form class="login-form">
+                <input type="email" id="email" name="email" placeholder="Adresse e-mail" required>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </div>
+
     <main>
-        
         <section class="featured-products">
             <h2>Featured Products</h2>
             <div class="product-list">
                 <div class="product-item">
                     <img src="img/patta-x-nike-air-max-plus-tn-fc-barcelona-FN8260-001.jpg" alt="Barcelona Jersey">
-                    <h3><t-shirt></h3>
+                    <h3>T-shirt</h3>
                     <p>Price: $89.99</p>
                     <p>Available Units: 20</p>
                     <button>Add to Cart</button>
@@ -43,12 +58,11 @@
                 </div>
                 <div class="product-item">
                     <img src="img/R (5).jpg" alt="Training Gear">
-                    <h3>ball barcelona</h3>
+                    <h3>Ball Barcelona</h3>
                     <p>Price: $69.99</p>
                     <p>Available Units: 10</p>
                     <button>Add to Cart</button>
                 </div>
-                <!-- Add more products as needed -->
             </div>
         </section>
     </main>
@@ -56,5 +70,7 @@
     <footer>
         <p>&copy; 2024 Nike & FC Barcelona. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
