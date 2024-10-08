@@ -8,63 +8,62 @@
 </head>
 <body>
     <header>
-        <h1>Nike x Barcelona</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#" class="cart-button">🛒 Cart (0)</a></li>
-            </ul>
-            <!-- Updated login link with modal trigger -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="#"><img src="img/barcelona nike2.png" alt="Nike" class="center-logo"></a>
+            </div>
             <div class="login">
                 <a href="#" id="loginBtn">Se connecter</a>
             </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#" class="cart-button">🛒</a></li>
+            </ul>
         </nav>
     </header>
+
+    <!-- Rest of your HTML code (carousel, main, footer, etc.) remains unchanged -->
     <section class="image-carousel">
         <div class="carousel-container">
             <div class="slides fade">
-                <img src="img/nike x barca.jpg" alt="Barcelona 1" style="width:90%">
+                <img src="img/FCB+M+NK+WINTERIZED+AWF+JKT+3R.jpg" alt="Barcelona 1" style="width:90%">
             </div>
             <div class="slides fade">
-                <img src="img/FCB+M+NK+DF+STD+ISS+PO+HDY+AW.png" alt="Barcelona 2" style="width:90%">
+                <img src="img/FCB 1 Haut.png" alt="Barcelona 2" style="width:90%">
             </div>
             <div class="slides fade">
-                <img src="img/pull barca.png" alt="Barcelona 3" style="width:90%">
+                <img src="img/FCB 2 Haut.avif" alt="Barcelona 3" style="width:90%">
             </div>
             <div class="slides fade">
-                <img src="img/FCB+M+NK+WINTERIZED+AWF+JKT+3R.jpg" alt="Barcelona 4" style="width:90%">
+                <img src="img/FCB 3 Haut.avif" alt="Barcelona 4" style="width:90%">
             </div>
-
-            <!-- Navigation Arrows -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-        <!-- Dots (for image indicators) -->
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
             <span class="dot" onclick="currentSlide(4)"></span> 
         </div>
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Se connecter</h2>
+                <form class="login-form">
+                    <input type="email" id="email" name="email" placeholder="Adresse e-mail" required>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <!-- Login Modal -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Se connecter</h2>
-            <form class="login-form">
-                <input type="email" id="email" name="email" placeholder="Adresse e-mail" required>
-                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
-                <button type="submit">Se connecter</button>
-            </form>
-        </div>
-    </div>
-    
     <main>
         <section class="featured-products">
             <h2> Products</h2>
@@ -77,7 +76,7 @@
                     <button>Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="img/366814_101_NIKE_FCB M NK DF STAD JSY SS HM_M1.avif" alt="Nike Sneakers">
+                    <img src="img/fc-barcelona-2022-23-match-home-mens-dri-fit-adv-soccer-jersey-vBmsfG.png" alt="Nike Sneakers">
                     <h3>T-shirt Barcelona</h3>
                     <p>Price: $119.99</p>
                     <p>Available Units: 15</p>
