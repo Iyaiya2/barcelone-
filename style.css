@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 /* Header with gradient background */
@@ -123,7 +123,7 @@ nav ul li a {
 .dot-container {
     text-align: center;
     padding: 10px;
-    background: #ddd;
+    background: #fff;
 }
 
 .dot {
