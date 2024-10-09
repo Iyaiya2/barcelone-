@@ -10,7 +10,7 @@ body {
 header {
     background: linear-gradient(to right, #0044a7, #ba0c2f); /* Blue to red gradient */
     color: white;
-    padding: 20px;
+    padding: 1px;
     position: relative;
     text-align: center;
 }
@@ -25,8 +25,9 @@ header {
 }
 
 .logo img {
-    width: 120%;
-    height: auto;
+    text-align: center;
+    width: 117%;
+    margin-top: -35%;
 }
 
 /* Ajustement de la position du bouton "Se connecter" */
@@ -38,13 +39,17 @@ header {
 
 .login a {
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ddd;
+    top: 50%;
+    padding: 21px;
     font-weight: bold;
 }
 
 .login a:hover {
-    color: #fff;
+    color: #ddd;
     opacity: 0.8;
 }
 
@@ -55,6 +60,9 @@ nav ul {
     padding: 50px;
     margin: 0;
     margin-top: 50px; /* Espace sous le logo */
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 nav ul li {
@@ -63,7 +71,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
     font-weight: bold;
 }
@@ -230,7 +238,7 @@ button:hover {
 
 .login-form button {
     background-color: #0073e6;
-    color: white;
+    color: #ddd;
     padding: 10px;
     border: none;
     cursor: pointer;
