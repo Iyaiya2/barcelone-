@@ -156,6 +156,7 @@ nav ul li a {
 .featured-products {
     padding: 40px;
     text-align: center;
+    font-family: "Protest Strike", sans-serif;
     background-color: white;
     margin-top: 20px;
 }
@@ -185,6 +186,7 @@ nav ul li a {
 button {
     background-color: #0073e6;
     color: white;
+    font-family: "Protest Strike", sans-serif;
     border: none;
     padding: 10px;
     border-radius: 5px;
