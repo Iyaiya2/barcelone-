@@ -1,0 +1,22 @@
+{
+    "products": [
+    {
+        "id": "Sneakers x Barcelona",
+        "titre": "Sneakers x Barcelona",
+        "price": "$89.99",
+        "disponible": 20
+    },
+    {
+        "id": "T-shirt Barcelona",
+        "titre": "T-shirt Barcelona",
+        "price": "$119.99",
+        "disponible": 15
+    },
+    {
+        "id": "Ball Barcelona",
+        "titre": "Ball Barcelona",
+        "price": "$69.99",
+        "disponible": 10
+    }
+    ]
+}

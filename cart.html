@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My cart</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#"><img src="img/fc barceolne.png" alt="Nike" class="center-logo"></a>
+            </div>
+            <div class="login">
+                <a href="#" id="loginBtn">Login</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="cart.html" class="cart-button">🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" id="containercart">
+        <h1>My Cart</h1>
+        <div id="cart" class="cart">
+            <p>No acrticle.</p>
+        </div>
+        <p id="total">Total: 0$</p>
+        <button onclick="clearCart()">Empty the Cart</button>
+        <button onclick="goBack()">Back</button>
+    </div>
+    
+    <script src="cart.js"></script>
+</body>
+</html>
